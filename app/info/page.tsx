@@ -9,42 +9,17 @@ import Head from "next/head";
 import { Github, LinkedinIcon, Twitter } from "lucide-react";
 import { Ampersand } from "lucide-react";
 import { Linkedin } from "lucide-react";
-import Bento from "./components/Bentov2";
 import { useState } from "react";
 
 export default function Home() {
   const [sections, setSections] = useState([
     {
-      title: "misc",
-      // content: "index.js",
+      title: "info",
       subSections: [
-        { title: "about", content: "→", link: "/info/about" },
-        // { title: "resume", content: "→", link: "/resume" },
-        // { title: "Subsection 1.2", content: "Content for Subsection 1.2" },
-      ],
-      isOpen: false,
-    },
-    {
-      title: "work",
-      subSections: [
-        { title: "Stake", content: "→", link: "/work/stake" },
-        // { title: "Rune", content: "→", link: "/rune" },
-        { title: "Pregame", content: "→", link: "/work/pregame" },
-        { title: "Prompter", content: "→", link: "/work//prompter" },
+        { title: "about", content: "→", link: "/" },
       ],
       // content: "Content for Section 2",
-      isOpen: false,
-    },
-    {
-      title: "links",
-      // content: "Content for Section 3",
-      subSections: [
-        { title: "Github", content: "↗", link: "https://github.com/ethanchiasson" },
-        { title: "Twitter", content: "↗", link: "https:/twitter.com/ethan_chiasson" },
-        { title: "LinkedIn", content: "↗", link: "https://linkedin.com/in/ethanchiasson" },
-      
-      ],
-      isOpen: false,
+      isOpen: true,
     },
   ]);
 
@@ -61,21 +36,13 @@ export default function Home() {
 
   return (
     <main className="flex flex-col p-8 mx-auto font-light">
-        <div className="flex flex-row gap-2 mb-2 text-sm">
+           <div className="flex flex-row gap-2 mb-2 text-sm">
            <p><Link href={"/"}>ethan</Link></p>
+           <p>/</p>
+           <p className="underline">misc</p>
         </div>
       {sections.map((section, index) => (
         <div key={index} className="accordion-section">
-          <div
-            className="accordion-header hover:cursor-pointer inline-flex"
-            onClick={() => handleToggle(index)}
-          >
-            {section.isOpen ? (
-              <p className="transition duration-500">- {section.title}</p>
-            ) : (
-              <p className="transition duration-500">+ {section.title}</p>
-            )}
-          </div>
           {section.isOpen && (
             <div className="accordion-content">
               {/* {section.content} */}
