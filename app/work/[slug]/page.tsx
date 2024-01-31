@@ -21,7 +21,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     <main className="flex flex-col p-8 mx-auto ">
       <div className="flex flex-row gap-2 mb-8 text-sm">
         <p>
-          <Link href={"/"}>ethan</Link>
+          <Link href={"/"}>home</Link>
         </p>
         <p>/</p>
         <p>

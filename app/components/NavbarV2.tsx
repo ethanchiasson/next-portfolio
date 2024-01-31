@@ -21,7 +21,7 @@ const NavbarV2 = () => {
         transition={{ duration: 3.3, delay: 0.33 }}
       >
         <Link href={"/"}>
-        <h1 className="text-[16px] dark:text-white">☯︎</h1>
+        <h1 className="text-[16px] dark:text-white">ethan</h1>
         </Link>
     
       </motion.div>
