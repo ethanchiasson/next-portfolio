@@ -15,7 +15,7 @@ import { useState } from "react";
 export default function Home() {
   const [sections, setSections] = useState([
     {
-      title: "misc",
+      title: "info",
       // content: "index.js",
       subSections: [
         { title: "about", content: "→", link: "/info/about" },

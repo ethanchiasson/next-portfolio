@@ -15,7 +15,7 @@ export default function About() {
         <div className="flex flex-row gap-2 mb-8 text-sm">
            <p><Link href={"/"}>home</Link></p>
            <p>/</p>
-           <p><Link href={"/info"}>misc</Link></p>
+           <p><Link href={"/info"}>info</Link></p>
            <p>/</p>
            <p className="underline">about</p>
         </div>

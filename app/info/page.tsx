@@ -16,7 +16,7 @@ export default function Home() {
     {
       title: "info",
       subSections: [
-        { title: "about", content: "→", link: "/" },
+        { title: "about", content: "→", link: "/about" },
       ],
       // content: "Content for Section 2",
       isOpen: true,
@@ -39,7 +39,7 @@ export default function Home() {
            <div className="flex flex-row gap-2 mb-2 text-sm">
            <p><Link href={"/"}>home</Link></p>
            <p>/</p>
-           <p className="underline">misc</p>
+           <p className="underline">info</p>
         </div>
       {sections.map((section, index) => (
         <div key={index} className="accordion-section">
