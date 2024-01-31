@@ -13,7 +13,7 @@ export default function About() {
   return (
     <main className="flex flex-col p-8 mx-auto font-light ">
         <div className="flex flex-row gap-2 mb-8 text-sm">
-           <p><Link href={"/"}>ethan</Link></p>
+           <p><Link href={"/"}>home</Link></p>
            <p>/</p>
            <p><Link href={"/"}>info</Link></p>
            <p>/</p>
