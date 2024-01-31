@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="cursor-crosshair">
       <body
-        className={GeistSans.className + " min-h-screen max-w-[888px] mx-auto cursor-crosshair"}
+        className={GeistSans.className + " min-h-screen max-w-[888px] mx-auto"}
         // className={GeistSans.className + " min-h-screen max-w-[1280px] mx-auto"}
       >
         <Providers>
