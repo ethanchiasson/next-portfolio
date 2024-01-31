@@ -40,7 +40,7 @@ export default function Home() {
       // content: "Content for Section 3",
       subSections: [
         { title: "Github", content: "↗", link: "https://github.com/ethanchiasson" },
-        { title: "Twitter", content: "↗", link: "https:/twitter.com/ethan_chiasson" },
+        { title: "Twitter", content: "↗", link: "https://twitter.com/ethan_chiasson" },
         { title: "LinkedIn", content: "↗", link: "https://linkedin.com/in/ethanchiasson" },
       
       ],
@@ -83,7 +83,9 @@ export default function Home() {
                 <div className="inline-flex">
                   <div className="accordion-submenu ml-8">
                     {section.subSections.map((subSection, subIndex) => (
-                      <Link href={subSection.link}>
+                      <Link href={subSection.link}  {...(subSection.link.startsWith("http")
+                      ? { rel: "noopener noreferrer", target: "_blank" }
+                      : {})}>
                       <div
                         key={subIndex}
                         className="accordion-subsection group"
