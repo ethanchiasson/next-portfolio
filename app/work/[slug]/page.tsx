@@ -1,19 +1,21 @@
 import Link from "next/link";
-import fs from 'fs';
+// import fs from 'fs';
+import { promises as fs } from 'fs';
 // import Markdown from 'markdown-to-jsx'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
-const getWorks = (props:any) => {
+const getWorks = async (props:any) => {
 //   const folder = "works/"
-  const file = `works/${props}.md`;
-  const content = fs.readFileSync(file, "utf-8");
+  const file = `/works/${props}.md`;
+  const content = await fs.readFile(process.cwd() + file, 'utf8');
+  // const content = fs.readFileSync(file, "utf-8");
   return content;
 };
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug;
-  const content = getWorks(slug);
+  const content = await getWorks(slug);
 
   return (
     <main className="flex flex-col p-8 mx-auto ">
