@@ -19,7 +19,7 @@ export default function Home() {
         { title: "Stake", content: "→", link: "/work/stake" },
         // { title: "Rune", content: "→", link: "/rune" },
         { title: "Pregame", content: "→", link: "/work/pregame" },
-        { title: "Prompter", content: "→", link: "/work/prompter" },
+        { title: "Storyflow", content: "→", link: "/work/story-flow" },
       ],
       // content: "Content for Section 2",
       isOpen: true,

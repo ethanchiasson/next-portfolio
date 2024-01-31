@@ -1,24 +1,9 @@
-# Stake - Ai investment platform build for web3
+# StakeOS - Ai powered investment terminal for modern investors
 
-## Features
+![Stake](../stake.png)
 
-- 🤖 Ai market sentiment analysis
-- 📈 Token and Protocol details
-- 🔎 Quick Search
-- 👀 Asset Watchlist
-- 💬 Stake AI Chat
-- 💸 Yield aggregator
-- ✈️ Aidrop 
+Stake is an Ai powered investment platform with superpowers. Stake allows users discover, analyze, and track digital assets. Stake's Ai chat helps users understand data and opportunities via natural language.
 
-### Built with 
+ > Hey Stake, what are today's top trending tokens?
 
-- NextJS
-- Tailwind
-- Shadcn
-- Next-auth
-- Redis
-- Supabase
-
-
-#### Try it out
-- https://stake.gg
+StakOS is currently in private beta. To learn more, visit https://stake.gg.
