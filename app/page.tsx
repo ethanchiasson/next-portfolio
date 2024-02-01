@@ -28,9 +28,9 @@ export default function Home() {
       title: "work",
       subSections: [
         { title: "StakeOS", content: "→", link: "/work/stake" },
-        // { title: "Rune", content: "→", link: "/rune" },
-        { title: "Pregame", content: "→", link: "/work/pregame" },
         { title: "Storyflow", content: "→", link: "/work/story-flow" },
+        // { title: "Rune", content: "→", link: "/rune" },
+        { title: "PandaBot", content: "→", link: "/work/panda-bot" },
       ],
       // content: "Content for Section 2",
       isOpen: false,

@@ -2,30 +2,32 @@
 
 import ThemeToggle from "./ThemeToggle";
 import { motion } from "framer-motion";
-import { AtSign, Github } from "lucide-react";
 import Link from "next/link";
-
 const NavbarV2 = () => {
+
+
   return (
     <div className="flex flex-row justify-between items-center px-8 py-4">
+      
       <div className="flex flex-row items-center gap-2">
-      {/* <motion.span
+        {/* <motion.span
       className="text-[18px] dark:text-white"
            initial={{ opacity: 0 }}
            animate={{ opacity: 1 }}
            transition={{ duration: 0.33, delay: 0.88 }}
           >✦</motion.span> */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3.3, delay: 0.33 }}
-      >
-        <Link href={"/"}>
-        <h1 className="text-[16px] dark:text-white">ethan</h1>
-        </Link>
-    
-      </motion.div>
-
+        <div
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 3.3, delay: 0.33 }}
+        >
+          <Link href={"/"}>
+            <h1 className="dark:text-white text-[14px]">
+              {/* <Typer text="ethan"/> */}
+              ethan chiasson
+            </h1>
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-row items-center gap-3">
@@ -54,7 +56,7 @@ const NavbarV2 = () => {
             </p>
           </Link>
         </motion.div> */}
-         {/* <Link className="text-gray-500 transition-all duration-500 hover:text-slate-900 dark:hover:text-slate-100" href="https://github.com/ethanchiasson">
+        {/* <Link className="text-gray-500 transition-all duration-500 hover:text-slate-900 dark:hover:text-slate-100" href="https://github.com/ethanchiasson">
                   <Github className="h-4 w-4"/>
                   </Link> */}
         <motion.div

@@ -48,7 +48,7 @@ export default function Home() {
               {/* {section.content} */}
               {section.subSections && (
                 <div className="inline-flex">
-                  <div className="accordion-submenu ml-8">
+                  <div className="accordion-submenu">
                     {section.subSections.map((subSection, subIndex) => (
                       <Link href={subSection.link}>
                       <div

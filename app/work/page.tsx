@@ -18,8 +18,9 @@ export default function Home() {
       subSections: [
         { title: "Stake", content: "→", link: "/work/stake" },
         // { title: "Rune", content: "→", link: "/rune" },
-        { title: "Pregame", content: "→", link: "/work/pregame" },
         { title: "Storyflow", content: "→", link: "/work/story-flow" },
+        { title: "PandaBot", content: "→", link: "/work/panda-bot" },
+     
       ],
       // content: "Content for Section 2",
       isOpen: true,
@@ -51,7 +52,7 @@ export default function Home() {
               {/* {section.content} */}
               {section.subSections && (
                 <div className="inline-flex">
-                  <div className="accordion-submenu ml-8">
+                  <div className="accordion-submenu">
                     {section.subSections.map((subSection, subIndex) => (
                       <Link href={subSection.link}>
                       <div

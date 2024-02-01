@@ -18,8 +18,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const content = await getWorks(slug);
 
   return (
-    <main className="flex flex-col p-8 mx-auto ">
-      <div className="flex flex-row gap-2 mb-8 text-sm">
+    <main className="flex flex-col p-8 mx-auto">
+      <div className="flex flex-row gap-2 mb-8 text-sm font-light">
         <p>
           <Link href={"/"}>home</Link>
         </p>
