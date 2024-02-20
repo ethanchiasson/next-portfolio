@@ -27,10 +27,10 @@ export default function RootLayout({
 
     <html lang="en" suppressHydrationWarning className="cursor-crosshair">
       <body
-        className={GeistSans.className + " dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]"}
+        className={GeistSans.className + " min-h-screen dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]"}
         // className={GeistSans.className + " min-h-screen max-w-[1280px] mx-auto"}
       >
-        <div className="min-h-screen max-w-[888px] mx-auto">
+        <div className="max-w-[888px] mx-auto">
         <Providers>
           {/* <Navbar /> */}
         <NavbarV2/>

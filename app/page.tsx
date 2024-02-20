@@ -22,7 +22,7 @@ export default function Home() {
       title: "info",
       // content: "index.js",
       subSections: [
-        { title: "about", content: "→", link: "/info/about" },
+        { title: "about", content: "→", link: "/about" },
         // { title: "resume", content: "→", link: "/resume" },
         // { title: "Subsection 1.2", content: "Content for Subsection 1.2" },
       ],
@@ -43,9 +43,9 @@ export default function Home() {
       title: "resources",
       // content: "Content for Section 3",
       subSections: [
-        { title: "Resume", content: "↗", link: "/resume" },
+        { title: "Resume", content: "↗", link: "/resume.pdf" },
         { title: "LinkedIn", content: "↗", link: "https://linkedin.com/in/ethanchiasson" },
-        { title: "Github", content: "↗", link: "https://github.com/ethanchiasson" },
+        { title: "Github", content: "↗", link: "https://github.com/ethanchiasson", },
         // { title: "Twitter", content: "↗", link: "https://twitter.com/ethan_chiasson" },
       
       ],
@@ -66,7 +66,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col p-8 mx-auto font-light">
-      <TextGenerateEffect className="mb-8" words="Hey, I'm Ethan. I'm a software developer and designer from the United States."/>
+      <TextGenerateEffect className="mb-8 text-3xl" words="Hey I'm Ethan, a software developer and product designer based in the United States."/>
         {/* <div className="flex flex-row gap-2 mb-2 text-sm">
            <p><Link href={"/"}>home</Link></p>
         </div> */}
@@ -76,7 +76,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.8 + index/2 }}
-            className="accordion-header hover:cursor-pointer inline-flex text-gray-500 dark:hover:text-white hover:text-black"
+            className="accordion-header hover:cursor-pointer inline-flex text-gray-500 dark:hover:text-white hover:text-black md:text-lg"
             onClick={() => handleToggle(index)}
           >
             {section.isOpen ? (
@@ -86,14 +86,14 @@ export default function Home() {
             )}
           </motion.div>
           {section.isOpen && (
-            <div className="accordion-content ">
+            <div className="accordion-content md:text-lg ">
               {/* {section.content} */}
               {section.subSections && (
                 <div className="inline-flex">
                   <div className="accordion-submenu ml-8">
                     {section.subSections.map((subSection, subIndex) => (
-                      <Link href={subSection.link}  {...(subSection.link.startsWith("http")
-                      ? { rel: "noopener noreferrer", target: "_blank" }
+                      <Link href={subSection.link}  {...(subSection.link.startsWith("http") || subSection.link.startsWith("/resume")
+                      ? { rel: "noopener noreferrer", target: "_blank" } 
                       : {})}>
                       <div
                         key={subIndex}
@@ -102,7 +102,7 @@ export default function Home() {
                         <p className="hover:cursor-pointer text-gray-500 dark:hover:text-white hover:text-black">
                           {" "}
                           {subSection.title}{" "}
-                          <span className="text-gray-500 text-sm ml-2 group-hover:ml-4 duration-300">
+                          <span className="text-gray-500 text ml-2 group-hover:ml-4 duration-300">
                             {subSection.content}
                           </span>
                         </p>
