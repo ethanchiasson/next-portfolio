@@ -7,4 +7,4 @@ Stake is an AI-powered investment platform with superpowers. Stake allows users 
 StakOS is currently in private beta. To learn more, visit https://stake.gg.
 
 ### Built with
-React, Next.js, Redis, Supabase,and OpenAI.
+React, Next.js, Redis, Supabase, and OpenAI API.

@@ -11,6 +11,6 @@ PandaBot is an open-source Discord bot powered by the Pandascore API. PandaBot a
 ### Built with 
 - Discord.js, Node.js, and Docker.
 
-## View the code on my Github
+### View the code on my Github
 - https://github.com/ethanchiasson
 
