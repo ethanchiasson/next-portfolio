@@ -2,7 +2,7 @@
 
 ![Storyflow](../storyflow.png)
 
-Storyflow is an app that helps you creators create, edit, and stream scripts in a customizeable online teleprompter. Simple add your text, edit your colors, set and speed, and start making better videos.
+Storyflow is an app that helps users create, edit, and stream scripts in a customizable online teleprompter. Simply add your text, edit your colors, set the speed, and start making better videos.
 
 ### Built with
-Nextjs, Shadcn, and Framer motion
+React, Next.js, Shadcn, and Framer motion.

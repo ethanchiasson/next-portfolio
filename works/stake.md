@@ -2,8 +2,9 @@
 
 ![Stake](../stake.png)
 
-Stake is an Ai powered investment platform with superpowers. Stake allows users discover, analyze, and track digital assets. Stake's Ai chat helps users understand data and opportunities via natural language.
-
- > Hey Stake, what are today's top trending tokens?
+Stake is an AI-powered investment platform with superpowers. Stake allows users to discover, analyze, and track digital assets. Stake's AI chat helps users understand data and opportunities via natural language.
 
 StakOS is currently in private beta. To learn more, visit https://stake.gg.
+
+### Built with
+React, Next.js, Redis, Supabase,and OpenAI.
