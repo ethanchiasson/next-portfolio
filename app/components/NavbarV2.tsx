@@ -16,10 +16,10 @@ const NavbarV2 = () => {
            animate={{ opacity: 1 }}
            transition={{ duration: 0.33, delay: 0.88 }}
           >✦</motion.span> */}
-        <div
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // transition={{ duration: 3.3, delay: 0.33 }}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2.8 }}
         >
           <Link href={"/"}>
             <h1 className="dark:text-white text-[14px]">
@@ -27,7 +27,7 @@ const NavbarV2 = () => {
               ethan chiasson
             </h1>
           </Link>
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex flex-row items-center gap-3">

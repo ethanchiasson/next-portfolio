@@ -12,7 +12,11 @@ import { Linkedin } from "lucide-react";
 import Bento from "./components/Bentov2";
 import { useState } from "react";
 
+import { TextGenerateEffect } from "./components/RenderWords";
+
 export default function Home() {
+
+  const intro = 'Hey, Im Ethan, a software developer from the united States.'
   const [sections, setSections] = useState([
     {
       title: "info",
@@ -36,12 +40,13 @@ export default function Home() {
       isOpen: false,
     },
     {
-      title: "links",
+      title: "resources",
       // content: "Content for Section 3",
       subSections: [
-        { title: "Github", content: "↗", link: "https://github.com/ethanchiasson" },
-        { title: "Twitter", content: "↗", link: "https://twitter.com/ethan_chiasson" },
+        { title: "Resume", content: "↗", link: "/resume" },
         { title: "LinkedIn", content: "↗", link: "https://linkedin.com/in/ethanchiasson" },
+        { title: "Github", content: "↗", link: "https://github.com/ethanchiasson" },
+        // { title: "Twitter", content: "↗", link: "https://twitter.com/ethan_chiasson" },
       
       ],
       isOpen: false,
@@ -61,23 +66,27 @@ export default function Home() {
 
   return (
     <main className="flex flex-col p-8 mx-auto font-light">
-        <div className="flex flex-row gap-2 mb-2 text-sm">
+      <TextGenerateEffect className="mb-8" words="Hey, I'm Ethan. I'm a software developer and designer from the United States."/>
+        {/* <div className="flex flex-row gap-2 mb-2 text-sm">
            <p><Link href={"/"}>home</Link></p>
-        </div>
+        </div> */}
       {sections.map((section, index) => (
         <div key={index} className="accordion-section">
-          <div
-            className="accordion-header hover:cursor-pointer inline-flex"
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.8 + index/2 }}
+            className="accordion-header hover:cursor-pointer inline-flex text-gray-500 dark:hover:text-white hover:text-black"
             onClick={() => handleToggle(index)}
           >
             {section.isOpen ? (
-              <p className="transition duration-500">- {section.title}</p>
+              <p className="transition duration-500 text-black dark:text-white">- {section.title}</p>
             ) : (
               <p className="transition duration-500">+ {section.title}</p>
             )}
-          </div>
+          </motion.div>
           {section.isOpen && (
-            <div className="accordion-content">
+            <div className="accordion-content ">
               {/* {section.content} */}
               {section.subSections && (
                 <div className="inline-flex">
@@ -90,7 +99,7 @@ export default function Home() {
                         key={subIndex}
                         className="accordion-subsection group"
                       >
-                        <p className="hover:cursor-pointer">
+                        <p className="hover:cursor-pointer text-gray-500 dark:hover:text-white hover:text-black">
                           {" "}
                           {subSection.title}{" "}
                           <span className="text-gray-500 text-sm ml-2 group-hover:ml-4 duration-300">
