@@ -26,9 +26,9 @@ export default function About() {
         <br/>
         <p>I am currently building <span className="underline cursor-pointer"><a href="https://stake.gg">StakeOS</a></span>, and A.I. powered investment platform.</p>
         <br/>
-        <p>I am active on <span className="underline cursor-pointer">LinkedIn</span> where my DMs are open.</p>
+        <p>I am active on <span className="underline cursor-pointer"><a href="https://linkedin/in/ethanchiasson">LinkedIn</a></span> where my DMs are open.</p>
         <br/>
-        <p>I am always interested in new oppourtunities - my email is <span className="underline">chiassonethan@gmail.com</span></p>
+        <p>I am always interested in new oppourtunities - feel free to email me at <span className="underline">chiassonethan@gmail.com</span></p>
         </div>
     </main>
   );
