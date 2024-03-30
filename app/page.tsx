@@ -35,7 +35,7 @@ export default function Home() {
     {
       title: "resources",
       subSections: [
-        { title: "Resume", content: "↗", link: "/resume.pdf" },
+        // { title: "Resume", content: "↗", link: "/resume.pdf" },
         {
           title: "LinkedIn",
           content: "↗",
